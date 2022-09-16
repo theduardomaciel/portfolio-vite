@@ -1,0 +1,4 @@
+.canvas {
+    display: flex;
+    background-color: var(--primary-color-01);
+}

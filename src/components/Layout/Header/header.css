@@ -1,0 +1,320 @@
+.nav {
+    display: flex;
+
+    background-color: var(--secondary-color-01);
+    height: var(--nav-height);
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    transition: 0.3s;
+
+    z-index: 100;
+}
+
+nav div.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.interactiveIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+    cursor: pointer;
+}
+
+.menu .content .iconHolder.lod {
+    display: inline-block;
+}
+
+.iconHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menu .content .iconHolder p {
+    font-size: 0.85rem;
+    font-family: 'Inter';
+
+    text-transform: uppercase;
+}
+
+.interactiveIcon path {
+    fill: var(--primary-color-01);
+}
+
+.menu a.button {
+    font-family: 'Roboto Serif';
+    font-weight: 400;
+    cursor: pointer;
+    background-color: initial;
+}
+
+.menu a.button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color-01);
+    outline: none;
+    color: var(--secondary-color-01);
+}
+
+/* .blurBackground {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 175vh;
+    height: var(--nav-height);
+}
+
+nav.scroll .blurBackground {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    backdrop-filter: blur(5px);
+
+    background-color: red;
+} */
+
+.nav.scroll.highDetail:not(.menuExpanded) {
+    opacity: 1;
+    background-color: initial;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+}
+
+/* .nav.scroll:not(.highDetail) {
+    outline: 1px solid var(--primary-color-01);
+} */
+
+.title {
+    font-family: 'Roboto Serif', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.3rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav .menu {
+    position: fixed;
+}
+
+/* ===== MENU ================================================== */
+.nav.menuExpanded {
+    /* Quando o menu estiver aberto, removemos a possibilidade de rolagem */
+    overflow: hidden;
+}
+
+/* .nav.menuExpanded> :not(nav) {
+    Some com TUDO na página (primeiro nível - header, .nav), menos o que foi especificado no :not()
+    visibility: hidden;
+} */
+
+
+/* O menu fica oculto por padrão
+ e o botão de abrir o menu fica oculto quando o menu está aberto  */
+.menu
+
+/* ,
+.nav.menuExpanded .open-menu */
+    {
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu {
+    z-index: initial;
+    transform: translateY(100%);
+}
+
+.menu-wrapper {
+    z-index: 10;
+}
+
+nav.nav.menuExpanded body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+/* O menu é exibido quando a classe ".menuExpanded" é adicionada pelo JavaScript */
+.nav.menuExpanded .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: var(--nav-height);
+    height: calc(100vh - var(--nav-height) / 2);
+
+    visibility: visible;
+    opacity: 1;
+
+    left: 0;
+    background-color: var(--secondary-color-01);
+    /* var(--secondary-color-01); */
+
+    padding: 1.5rem 2.5rem;
+    width: 100vw;
+
+    transform-style: preserve-3d;
+
+    transition: transform 225ms;
+    transition-timing-function: cubic-bezier(0.002, 0.82, 0.165, 1);
+    transform: translateX(0%);
+}
+
+.nav.menuExpanded .menu .content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    /* margin-bottom: 10%; */
+    margin-bottom: 50%;
+}
+
+.menu .close-menu {
+    align-self: flex-start;
+}
+
+.menu .list {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 3.5rem;
+
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.menu ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menu a.button {
+    border: 1px solid var(--primary-color-01);
+
+    border-radius: 0.5rem;
+    padding: 0.35rem 1.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.menuIcon.outlined path {
+    stroke: var(--primary-color-01);
+}
+
+.menuIcon.filled path {
+    fill: var(--primary-color-01);
+}
+
+@media (min-width: 1024px) {
+
+    /* NAVIGATION ====================================== */
+    /* [RESETS] */
+    /* Para garantir, colocamos o (.nav) para que essas propriedades sejam mais específicas que as que colocamos anteriormente */
+    .nav .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        transform: initial;
+        color: var(--primary-color-01);
+        background-color: initial;
+        filter: initial;
+    }
+
+    .nav {
+        height: var(--nav-height-desktop);
+    }
+
+    .nav .close-menu,
+    .nav .open-menu,
+    .nav .backdrop,
+    .nav .menu a.button svg,
+    .nav .social-links,
+    .menu .content .iconHolder.lod,
+    .menu .content .iconHolder.theme p {
+        display: none;
+    }
+
+    .menu .content .iconHolder {
+        flex-direction: row;
+    }
+
+    .nav .menu .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 7.5rem;
+    }
+
+    .nav .list {
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        display: flex;
+        gap: 5rem;
+    }
+
+    .nav .menu ul li a {
+        color: var(--primary-color-01);
+        font-weight: 400;
+        opacity: 0.6;
+    }
+
+    .nav.scroll .menu ul li a {
+        color: var(--white);
+        opacity: 0.6;
+    }
+
+    .nav .menu li a {
+        transition: opacity 0.4s;
+    }
+
+    .nav .menu li a.active,
+    .nav .menu li a:hover {
+        opacity: 1;
+        font-weight: 700;
+    }
+
+    .nav .navLine {
+        height: 1.5px;
+        width: 25px;
+        display: block;
+
+        position: absolute;
+        bottom: 2rem;
+        left: 0;
+
+        border-radius: 0.2rem;
+        background-color: var(--primary-color-01);
+
+        transition: 0.35s;
+    }
+
+    .nav.scroll .menu li a.active,
+    .nav.scroll .menu li a:hover {
+        opacity: 1;
+    }
+}

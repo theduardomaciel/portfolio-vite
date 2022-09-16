@@ -1,75 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,100;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900&display=swap');
+
+@font-face {
+    font-family: 'Organic Relief';
+    src: url('./assets/fonts/OrganicRelief.ttf');
+    /* IE9 Compatibility Modes */
+    src: url('./assets/fonts/OrganicRelief.ttf'),
+        /* IE6-IE8 */
+        url('./assets/fonts/OrganicRelief.ttf'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/OrganicRelief.ttf'),
+        /* Pretty Modern Browsers */
+        url('./assets/fonts/OrganicRelief.ttf'),
+        /* Safari, Android, iOS */
+        url('./assets/fonts/OrganicRelief.ttf'),
+        /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Sugarpunch';
+    src: url('./assets/fonts/Sugarpunch.otf');
+    /* IE9 Compatibility Modes */
+    src: url('./assets/fonts/Sugarpunch.otf'),
+        /* IE6-IE8 */
+        url('./assets/fonts/Sugarpunch.otf'),
+        /* Super Modern Browsers */
+        url('./assets/fonts/Sugarpunch.otf'),
+        /* Pretty Modern Browsers */
+        url('./assets/fonts/Sugarpunch.otf'),
+        /* Safari, Android, iOS */
+        url('./assets/fonts/Sugarpunch.otf'),
+        /* Legacy iOS */
+}
+
 :root {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    font-size: 62.5%;
+    /* 
+    100% ----- 16px
+    x  ------- 10px
+    
+    1rem = 10px
+    */
+    --nav-height: 10rem;
+    --nav-height-desktop: 8rem;
 
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    color: var(--primary-color-01);
+}
 
-    font-synthesis: none;
+:root.dark {
+    --primary-color-01: #FFFFFF;
+    --secondary-color-01: #000000;
+
+    --background-02: #040305;
+}
+
+:root.light {
+    --primary-color-01: #000000;
+    --secondary-color-01: #FFFFFF;
+
+    --background-02: #EEE9F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+    /* As caixas agora passam a ser contadas a partir da borda, e não do conteúdo, evitando problemas com o "padding" */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
     text-rendering: optimizeLegibility;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Roboto Slab'
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-}
-
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
-
-a:hover {
-    color: #535bf2;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.6rem;
+    text-align: center;
+
+    overflow: overlay;
+    background-color: var(--secondary-color-01);
+    transition: 0.275s;
 }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+main {
+    margin-inline: auto;
+    margin-top: var(--nav-height);
+}
+
+.wrapper {
+    width: 75%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bolder {
+    font-weight: 800;
+}
+
+.big {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 10rem;
+    gap: 6.5rem;
+}
+
+/* .spinner::after {
+    content: "";
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color-01)
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+.button {
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
-    cursor: pointer;
-    transition: border-color 0.25s;
+    background-color: initial;
+    border: none;
+    text-align: center;
 }
 
-button:hover {
-    border-color: #646cff;
+.fadeIn {
+    opacity: 1;
 }
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+.fadeOut {
+    opacity: 0;
 }
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
+@media (min-width: 1024px) {
+
+    .wrapper {
+        width: calc(100% - 25rem);
     }
 
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
 }

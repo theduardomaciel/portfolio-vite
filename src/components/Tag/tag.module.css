@@ -1,0 +1,40 @@
+.tag {
+    display: flex;
+    flex-direction: row;
+
+    color: var(--secondary-color-01);
+
+    height: 4rem;
+}
+
+.tag .tagBeginning {
+    background-color: var(--primary-color-01);
+    width: 1.5rem;
+    height: 100%;
+
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.tag .tagCenter {
+    height: 100%;
+    background-color: var(--primary-color-01);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+
+    padding-right: 0.5rem;
+}
+
+.tag .tagEnd {
+    position: relative;
+    right: 0.2rem;
+    top: 30%;
+    transform: translateY(-36%);
+}

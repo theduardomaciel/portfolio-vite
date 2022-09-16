@@ -1,0 +1,21 @@
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+
+    align-items: center;
+}
+
+.icon path {
+    fill: var(--primary-color-01);
+    /* stroke: var(--primary-color-01); */
+}
+
+.iconOutlined path {
+    stroke: var(--primary-color-01);
+}
+
+.twitter path {
+    fill: var(--primary-color-01);
+    stroke: var(--primary-color-01);
+}

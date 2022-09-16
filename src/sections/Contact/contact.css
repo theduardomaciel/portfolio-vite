@@ -1,0 +1,139 @@
+/*  CONTACT  ========================================== */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#contact .blob1Holder {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .infoHolder {
+    height: 32.5rem;
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#contact .infoHolder:not(.info2) {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    position: absolute;
+    left: -10%;
+
+    margin-left: 20%;
+    text-align: left;
+
+    min-width: fit-content;
+}
+
+#contact .infoHolder.info2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    opacity: 1;
+    position: absolute;
+    left: 0;
+
+    margin-left: 10%;
+    text-align: left;
+    /* transform: translateX(50%); */
+}
+
+#contact .infoHolder.info2 p {
+    color: var(--primary-color-01);
+    z-index: -1;
+
+    /* width: 65%; */
+}
+
+#contact .infoHolder p {
+    font-family: 'Organic Relief';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 2.8rem; */
+    font-size: 2.4rem;
+    /* line-height: 5.5rem; */
+    line-height: 4.5rem;
+    display: flex;
+    align-items: center;
+
+    max-width: 75%;
+
+    color: var(--secondary-color-01);
+}
+
+#contact .infoHolder .input {
+    background: var(--primary-color-01);
+    border: 1px solid var(--secondary-color-01);
+    border-radius: 2.5rem;
+
+    position: relative;
+
+    color: var(--secondary-color-01);
+
+    padding-left: 1.5rem;
+    height: 4rem;
+    width: 90%;
+}
+
+#contact .infoHolder.info2 button {
+    position: absolute;
+    right: 12%;
+    transform: translateY(15%);
+
+    height: 3rem;
+
+    font-family: 'Roboto Serif';
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    padding: 0 1rem;
+    line-height: 0;
+
+    outline: 1px solid var(--primary-color-01);
+    background-color: var(--secondary-color-01);
+    color: var(--primary-color-01);
+
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+#contact .infoHolder .inputHolder {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+
+    /*  CONTACT  ========================================== */
+    #contact .infoHolder p {
+        font-size: 3.2rem;
+        line-height: 5.5rem;
+    }
+
+    #contact .infoHolder .input {
+        width: 75%;
+    }
+
+    #contact .infoHolder.info2 button {
+        position: relative;
+        right: calc(4vw + 1.5%);
+        transform: none;
+
+        height: 70%;
+    }
+}

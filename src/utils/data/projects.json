@@ -1,0 +1,90 @@
+[
+    {
+        "name": "DFL",
+        "description": "An application that will help you to report garbage outbreaks and find trash collection points in your city.",
+        "link": "https://dfl.vercel.app",
+        "accent_color": "52, 98, 89",
+        "image_uri": "dfl",
+        "status": "finished",
+        "technologies": [
+            {
+                "name": "Website",
+                "link": "https://github.com/theduardomaciel/dfl-web",
+                "techs": [
+                    "HTML",
+                    "CSS",
+                    "Javascript (w/Typescript)",
+                    "React",
+                    "Next.js",
+                    "Axios"
+                ]
+            },
+            {
+                "name": "API",
+                "link": "https://github.com/theduardomaciel/dfl-api",
+                "techs": [
+                    "Express",
+                    "Prisma",
+                    "PostgreSQL",
+                    "Javascript (w/Typescript)",
+                    "Node.js"
+                ]
+            },
+            {
+                "name": "Mobile App",
+                "link": "https://github.com/theduardomaciel/dfl-mobile",
+                "techs": [
+                    "React Native",
+                    "Expo",
+                    "React",
+                    "Javascript (w/Typescript)",
+                    "Axios"
+                ],
+                "outro": "And other +30 libraries"
+            }
+        ]
+    },
+    {
+        "name": "PATAS",
+        "description": "A website that will help you find vulnerable homeless animals, as well as help overcrowded shelters.",
+        "accent_color": "125, 120, 182",
+        "image_uri": "pata",
+        "status": "sketch",
+        "technologies": []
+    },
+    {
+        "name": "Rhythm Haven",
+        "description": "Rhythm Haven is a musical experience about finding shelter on tough situations.",
+        "accent_color": "115, 255, 0",
+        "image_uri": "rhythmhaven",
+        "link": "https://www.roblox.com/games/4192356812/Rhythm-Haven",
+        "status": "unfinished",
+        "technologies": [
+            {
+                "name": "Core",
+                "techs": [
+                    "Lua",
+                    "Luau"
+                ],
+                "outro": ""
+            }
+        ]
+    },
+    {
+        "name": "Extreme Adventures",
+        "description": "Extreme Adventures is a platform multiplayer adventure game with several exclusive mechanics and more than 10 unique levels.",
+        "accent_color": "4,35,70",
+        "image_uri": "extremeadventures",
+        "link": "https://www.roblox.com/games/3427541210/Extreme-Adventures-DEMO",
+        "status": "unfinished",
+        "technologies": [
+            {
+                "name": "Core",
+                "techs": [
+                    "Lua",
+                    "Luau"
+                ]
+            }
+        ]
+    }
+]

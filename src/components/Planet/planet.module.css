@@ -1,0 +1,57 @@
+.planet {
+    z-index: 5;
+
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* .planet path {
+    fill: var(--primary-color-01);
+    stroke: var(--secondary-color-01);
+} */
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-3deg);
+    }
+}
+
+@keyframes moveUp {
+    from {
+        transform: translate(5%, 7%);
+    }
+
+    to {
+        transform: translateY(10%, -15%);
+    }
+}
+
+@keyframes moveDown {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translate(-2%, 10%);
+    }
+}
+
+.moon1 {
+    animation-name: moveUp;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.moon2 {
+    animation-name: moveDown;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
