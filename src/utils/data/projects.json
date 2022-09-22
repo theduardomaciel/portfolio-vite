@@ -53,6 +53,26 @@
         "technologies": []
     },
     {
+        "name": "This Website!",
+        "description": "My personal portfolio that contains diverse information about projects developed along my journey as a developer and the technologies I worked with.        ",
+        "accent_color": "220, 220, 220",
+        "image_uri": "portfolio",
+        "status": "finished",
+        "technologies": [
+            {
+                "name": "Front End",
+                "techs": [
+                    "React",
+                    "Javascript (w/Typescript)",
+                    "HTML",
+                    "CSS",
+                    "Vite"
+                ],
+                "outro": ""
+            }
+        ]
+    },
+    {
         "name": "Rhythm Haven",
         "description": "Rhythm Haven is a musical experience about finding shelter on tough situations.",
         "accent_color": "115, 255, 0",
