@@ -30,6 +30,7 @@ import { getImageUrl } from '../../utils/functions/getImageUrl';
 const statusIcons = {
     "finished": <FinishedIcon />,
     "sketch": <PendingIcon />,
+    "work in progress": <PendingIcon />,
     "unfinished": <UnfinishedIcon />
 }
 
@@ -104,17 +105,20 @@ export default function Projects({ ...props }) {
                         }
                         <h4><Translate>{projects[projectIndex].description}</Translate></h4>
                     </div>
-                    <a target={"_blank"} rel="noreferrer" href={projects[projectIndex].link}>
-                        <Button
-                            style={{
-                                backgroundColor: `rgb(${projects[projectIndex].accent_color})`,
-                                color: "#FFFFFF",
-                                paddingBlock: `1.5rem`, paddingInline: "2.75rem",
-                                textTransform: "capitalize"
-                            }}
-                            title={projects[projectIndex].link ? TranslateText("VISIT PROJECT") : TranslateText("WORK IN PROGRESS")}
-                        />
-                    </a>
+                    {
+                        !projects[projectIndex].noLink &&
+                        <a target={"_blank"} rel="noreferrer" href={projects[projectIndex].link}>
+                            <Button
+                                style={{
+                                    backgroundColor: `rgb(${projects[projectIndex].accent_color})`,
+                                    color: "#FFFFFF",
+                                    paddingBlock: `1.5rem`, paddingInline: "2.75rem",
+                                    textTransform: "capitalize"
+                                }}
+                                title={projects[projectIndex].link ? TranslateText("VISIT PROJECT") : TranslateText("WORK IN PROGRESS")}
+                            />
+                        </a>
+                    }
                     {
                         projects[projectIndex].technologies.length >= 1 &&
                         <div className='moreInfo' onClick={() => setMoreInfoExpanded(!moreInfoExpanded)}>

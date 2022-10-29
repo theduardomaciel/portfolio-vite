@@ -45,10 +45,51 @@
         ]
     },
     {
+        "name": "estudaí",
+        "description": "An online study organization platform that will help you review and keep your subjects up to date. Enough of forgetting.",
+        "link": "https://estudai.vercel.app",
+        "accent_color": "118, 66, 203",
+        "image_uri": "estudai",
+        "status": "work in progress",
+        "technologies": [
+            {
+                "name": "Website",
+                "link": "https://github.com/theduardomaciel/estudai",
+                "techs": [
+                    "HTML",
+                    "CSS",
+                    "Javascript (w/Typescript)",
+                    "React",
+                    "Next.js",
+                    "Axios",
+                    "Radix-UI",
+                    "Stitches"
+                ]
+            },
+            {
+                "name": "API",
+                "techs": [
+                    "Express",
+                    "Prisma",
+                    "PostgreSQL",
+                    "Javascript (w/Typescript)",
+                    "Node.js",
+                    "Next.js API Routes"
+                ]
+            },
+            {
+                "name": "Mobile App",
+                "techs": [],
+                "outro": "Coming soon..."
+            }
+        ]
+    },
+    {
         "name": "PATAS",
         "description": "A website that will help you find vulnerable homeless animals, as well as help overcrowded shelters.",
         "accent_color": "125, 120, 182",
         "image_uri": "pata",
+        "link": "https://www.figma.com/file/zRMVA07zlfuybQ9TkzydIw/PATAS?node-id=0%3A1",
         "status": "sketch",
         "technologies": []
     },
@@ -58,6 +99,7 @@
         "accent_color": "220, 220, 220",
         "image_uri": "portfolio",
         "status": "finished",
+        "noLink": true,
         "technologies": [
             {
                 "name": "Front End",
@@ -87,23 +129,6 @@
                     "Luau"
                 ],
                 "outro": ""
-            }
-        ]
-    },
-    {
-        "name": "Extreme Adventures",
-        "description": "Extreme Adventures is a platform multiplayer adventure game with several exclusive mechanics and more than 10 unique levels.",
-        "accent_color": "4,35,70",
-        "image_uri": "extremeadventures",
-        "link": "https://www.roblox.com/games/3427541210/Extreme-Adventures-DEMO",
-        "status": "unfinished",
-        "technologies": [
-            {
-                "name": "Core",
-                "techs": [
-                    "Lua",
-                    "Luau"
-                ]
             }
         ]
     }
