@@ -53,7 +53,7 @@ export default function Projects({ ...props }) {
         if (imageRef.current !== null) {
             imageRef.current.classList.toggle("fadeOut")
             setTimeout(() => {
-                imageRef.current.src = getImageUrl(`../../assets/projects/${projects[projectIndex].image_uri}.png`)
+                imageRef.current.src = getImageUrl(projects[projectIndex].image_uri)
             }, 350);
             setTimeout(() => {
                 imageRef.current.classList.toggle("fadeOut")
@@ -176,7 +176,7 @@ export default function Projects({ ...props }) {
                 <img
                     style={{ marginTop: !isScreenWide && projects[projectIndex].technologies.length < 1 ? `3rem` : 0, filter: `drop-shadow(0px 0px 10px rgba(${projects[projectIndex].accent_color}, 0.5))` }}
                     ref={imageRef}
-                    src={getImageUrl(`../../assets/projects/${projects[0].image_uri}.png`)}
+                    src={getImageUrl(projects[0].image_uri)}
                     alt="Imagem representando o projeto"
                 />
             </div>

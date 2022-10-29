@@ -1,3 +1,3 @@
-export const getImageUrl = (path: string) => {
-    return new URL(path, import.meta.url).href
+export const getImageUrl = (name: string) => {
+    return new URL(`../../assets/projects/${name}.png`, import.meta.url).href
 }
