@@ -7,7 +7,7 @@
 }
 
 .subtitle h3 {
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto SlabVariable';
     font-style: normal;
     font-weight: 900;
     font-size: 2.8rem;
@@ -78,7 +78,7 @@
 }
 
 .info {
-    font-family: 'Roboto Slab';
+    font-family: 'Roboto SlabVariable';
     font-style: normal;
     color: var(--primary-color-01);
 
@@ -105,7 +105,7 @@
 }
 
 .info .moreInfo {
-    font-family: 'Inter';
+    font-family: 'InterVariable';
     font-weight: 600;
     font-size: 1.6rem;
 
@@ -205,13 +205,13 @@
 }
 
 .projectTechnologies h5 {
-    font-family: 'Inter';
+    font-family: 'InterVariable';
     font-weight: 600;
     font-size: 2.2rem;
 }
 
 .projectTechnologies h6 {
-    font-family: 'Inter';
+    font-family: 'InterVariable';
     font-weight: 700;
     font-size: 2.8rem;
 }
@@ -265,7 +265,7 @@
 }
 
 .statusHolder p {
-    font-family: 'Inter';
+    font-family: 'InterVariable';
     font-weight: 600;
     font-size: 1.4rem;
 

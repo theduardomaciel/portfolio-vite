@@ -24,7 +24,7 @@ export default function Footer() {
                     </a>
                     <div className='contact'>
                         <SocialMedia />
-                        <Button onClick={setRandomTheme} style={{ padding: `0.75rem 3.5rem` }} title='Surprise?' />
+                        {/* <Button onClick={setRandomTheme} style={{ padding: `0.75rem 3.5rem` }} title='Surprise?' /> */}
                     </div>
                 </div>
                 <div className='quote'>

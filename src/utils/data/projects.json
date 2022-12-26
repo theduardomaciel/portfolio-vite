@@ -62,19 +62,21 @@
                     "React",
                     "Next.js",
                     "Axios",
-                    "Radix-UI",
-                    "Stitches"
+                    "Radix",
+                    "Stitches",
+                    "Material UI"
                 ]
             },
             {
                 "name": "API",
                 "techs": [
                     "Express",
+                    "Multer",
                     "Prisma",
                     "PostgreSQL",
                     "Javascript (w/Typescript)",
                     "Node.js",
-                    "Next.js API Routes"
+                    "Next.js"
                 ]
             },
             {
@@ -85,16 +87,54 @@
         ]
     },
     {
-        "name": "PATAS",
+        "name": "presenteio",
+        "description": "A platform for automating social events that seeks to help create good moments in an easy and practical way. Good memories last forever.",
+        "link": "https://presenteio.vercel.app",
+        "accent_color": "255, 38, 38",
+        "image_uri": "presenteio",
+        "status": "work in progress",
+        "technologies": [
+            {
+                "name": "Front End",
+                "link": "https://github.com/theduardomaciel/presenteio",
+                "techs": [
+                    "HTML",
+                    "CSS",
+                    "Typescript",
+                    "React",
+                    "Next.js",
+                    "Axios",
+                    "Radix"
+                ]
+            },
+            {
+                "name": "Back End",
+                "techs": [
+                    "Prisma",
+                    "MySQL",
+                    "Typescript",
+                    "Node.js",
+                    "Next.js",
+                    "React Email",
+                    "Vercel OG",
+                    "SendGrid",
+                    "Imgur",
+                    "JWT"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "PATA",
         "description": "A website that will help you find vulnerable homeless animals, as well as help overcrowded shelters.",
         "accent_color": "125, 120, 182",
         "image_uri": "pata",
-        "link": "https://www.figma.com/file/zRMVA07zlfuybQ9TkzydIw/PATAS?node-id=0%3A1",
+        "link": "https://www.figma.com/file/zRMVA07zlfuybQ9TkzydIw/PATAS?node-id=301%3A129",
         "status": "sketch",
         "technologies": []
     },
     {
-        "name": "This Website!",
+        "name": "This portfolio.",
         "description": "My personal portfolio that contains diverse information about projects developed along my journey as a developer and the technologies I worked with.        ",
         "accent_color": "220, 220, 220",
         "image_uri": "portfolio",
@@ -125,7 +165,6 @@
             {
                 "name": "Core",
                 "techs": [
-                    "Lua",
                     "Luau"
                 ],
                 "outro": ""

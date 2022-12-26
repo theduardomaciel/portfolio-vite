@@ -23,7 +23,7 @@ export default function SocialMedia({ excludeInstagram, excludeTwitter, excludeE
             }
             {
                 !excludeWhatsApp &&
-                <a href="https://api.whatsapp.com/send?phone=5582988299223&text=Want%20to%20develop%20a%20awesome%20project?%20Contact%20me%20directly%20so%20we%20can%20talk%20about%20it%20:)">
+                <a href="https://api.whatsapp.com/send?phone=5582988299223&text=Want%20to%20develop%20an%20awesome%20project?%20Contact%20me%20directly%20so%20we%20can%20talk%20about%20it%20:)">
                     <WhatsAppIcon className={styles.icon} style={{ cursor: "pointer" }} />
                 </a>
             }

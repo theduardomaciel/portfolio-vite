@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/inter": "^4.5.14",
+    "@fontsource/roboto": "^4.5.8",
+    "@fontsource/roboto-serif": "^4.5.10",
+    "@fontsource/roboto-slab": "^4.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-transition-group": "^4.4.5",

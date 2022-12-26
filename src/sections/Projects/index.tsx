@@ -133,46 +133,6 @@ export default function Projects({ ...props }) {
                         </div>
                     }
                 </div>
-                {/* <div className='column2'>
-                    <img
-                        style={{ marginTop: !isScreenWide && projects[projectIndex].technologies.length < 1 ? `3rem` : 0 }}
-                        ref={imageRef}
-                        src={require(`../../assets/projects/${projects[0].image_uri}.png`)}
-                        alt="Imagem representando o projeto"
-                    />
-                    <div className='sectionDots'>
-                        <ChevronLeft
-                            style={{ cursor: projectIndex === 0 ? "initial" : "pointer", transition: "0.5s" }}
-                            fill={projectIndex === 0 ? "#808080" : 'var(--primary-color-01)'}
-                            onClick={() => {
-                                if (projectIndex > 0) {
-                                    setProjectIndex(projectIndex - 1)
-                                }
-                            }}
-                        />
-                        <ul>
-                            {
-                                projects.map(function (project, index) {
-                                    const isCurrentProject = index === projectIndex;
-                                    return (
-                                        <li onClick={() => setProjectIndex(index)} key={index}>
-                                            <div style={{ backgroundColor: isCurrentProject ? `rgb(${project.accent_color})` : "var(--primary-color-01)" }} className={`${isCurrentProject && "bulletUp"}`} />
-                                        </li>
-                                    )
-                                })}
-
-                        </ul>
-                        <ChevronLeft
-                            style={{ cursor: projectIndex === projects.length - 1 ? "initial" : "pointer", transition: "0.5s", transform: "rotate(180deg)" }}
-                            fill={projectIndex === projects.length - 1 ? "#808080" : 'var(--primary-color-01)'}
-                            onClick={() => {
-                                if (projectIndex < projects.length - 1) {
-                                    setProjectIndex(projectIndex + 1)
-                                }
-                            }}
-                        />
-                    </div>
-                </div> */}
                 <img
                     style={{ marginTop: !isScreenWide && projects[projectIndex].technologies.length < 1 ? `3rem` : 0, filter: `drop-shadow(0px 0px 10px rgba(${projects[projectIndex].accent_color}, 0.5))` }}
                     ref={imageRef}

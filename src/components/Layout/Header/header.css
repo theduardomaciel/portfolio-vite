@@ -39,7 +39,7 @@ nav div.wrapper {
 
 .menu .content .iconHolder p {
     font-size: 0.85rem;
-    font-family: 'Inter';
+    font-family: 'InterVariable';
 
     text-transform: uppercase;
 }
@@ -49,7 +49,7 @@ nav div.wrapper {
 }
 
 .menu a.button {
-    font-family: 'Roboto Serif';
+    font-family: 'Roboto SerifVariable';
     font-weight: 400;
     cursor: pointer;
     background-color: initial;
@@ -94,7 +94,7 @@ nav.scroll .blurBackground {
 } */
 
 .title {
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Roboto SerifVariable', serif;
     font-style: normal;
     font-weight: 700;
     font-size: 2.8rem;

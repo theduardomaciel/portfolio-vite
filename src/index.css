@@ -91,14 +91,14 @@ body {
 
     text-rendering: optimizeLegibility;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Roboto Slab'
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Roboto SlabVariable'
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Roboto SerifVariable', serif;
     font-size: 1.6rem;
     text-align: center;
 
@@ -142,31 +142,6 @@ main {
     gap: 6.5rem;
 }
 
-/* .spinner::after {
-    content: "";
-    position: relative;
-    width: 1.25rem;
-    height: 1.25rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 3px solid transparent;
-    border-top-color: #ffffff;
-    border-radius: 50%;
-    animation: button-loading-spinner 1s ease infinite;
-}
-
-@keyframes button-loading-spinner {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(1turn);
-    }
-} */
-
 ul {
     list-style: none;
 }
@@ -203,9 +178,7 @@ button {
 }
 
 @media (min-width: 1024px) {
-
     .wrapper {
         width: calc(100% - 25rem);
     }
-
 }
