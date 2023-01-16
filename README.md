@@ -1,9 +1,9 @@
 <h1 align="center">
-    Portfolio
+    Legacy Portfolio
 </h1>
 
-![cover](.github/cover.png?style=flat)
-
+### This repository was archived due to a new version of the portfolio, reworked in other technologies, which can be found at the link below:
+https://github.com/theduardomaciel/portfolio
 
 ## 💻 Project
 My personal portfolio that contains diverse information about projects developed along my journey as a developer and the technologies I worked with.
